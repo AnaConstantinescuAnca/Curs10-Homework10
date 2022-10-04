@@ -1,0 +1,7 @@
+Ioana|matematica|10
+Ioana|geografie|7
+George|fizica|8
+Alexandra|geografie|9
+Mihai|matematica|7
+Mihai|geografie|8
+Andreea|matematica|10
