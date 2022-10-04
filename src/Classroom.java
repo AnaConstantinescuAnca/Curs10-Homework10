@@ -35,18 +35,20 @@ public class Classroom extends StudentGrade {
 
 
     public Integer getAverageGrade(String discipline) {
-        List<Integer> list1 = new ArrayList<>();
-        for (int i = 0; i < list.size(); i++) {
-            list1.add(i, list.get(i).getGrade());
-        }
-        Integer sumaNote = 0;
-        for (int i = 0; i < list1.size(); i++) {
-            sumaNote += list1.get(i);
-        }
-
+        //List<Integer> list1 = new ArrayList<>();
         Integer average;
-        average = sumaNote / list1.size();
-        return average;
+        Integer sumaNote = 0;
+       Integer numarDisciplina=0;
+
+        for (int i = 0; i<list.size();i++){
+
+            if(list.get(i).getDiscipline().equals(discipline)){
+                sumaNote += list.get(i).getGrade();
+                numarDisciplina ++;
+            }
+        }
+        return average=sumaNote/numarDisciplina;
+
     }
 
     public StudentGrade getMaxGrade(String discipline) {

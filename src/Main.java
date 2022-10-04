@@ -41,7 +41,7 @@ public class Main {
 
         //media pe disciplina matematica
         Classroom averageClassroom = new Classroom(listOfStudentGrade);
-        averageClassroom.getAverageGrade("Mathematics");
+
         System.out.println(String.format("Media pe clasa la disciplina Mathematics este %d",
         averageClassroom.getAverageGrade("Mathematics")));
 
